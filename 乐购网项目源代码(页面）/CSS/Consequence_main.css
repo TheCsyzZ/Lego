@@ -1,0 +1,94 @@
+@charset "utf-8";
+/* CSS Document */
+
+*{
+    margin: 0;
+    padding:0;
+}
+body{
+    min-width: 1200px;
+	background-color:#666;
+	background: url(../Consequence_picture/shx_background4.jpg);
+	background-attachment: fixed;
+	
+}
+.logo{
+    position: absolute;
+    top: 12px;
+    left: 0;
+}
+.menu_list{
+    position: absolute;
+    top: -5px;
+    left: 185px;
+}
+.menu_list2{
+    position: absolute;
+    top: -5px;
+    right: 100px;
+}
+.listItem{
+    float: left;
+}
+.item{
+    top: 0px;
+    font-size: 18px;
+    float: left;
+    padding:0 32px;
+    text-decoration: none;
+    color: #000000;
+    line-height: 90px;
+}
+.top_bar{
+    background-color: #fff;
+    position: relative;
+    opacity:0.8;
+}
+.bar_inner{
+    padding-top: 80px;
+    position: relative;
+    margin:0 auto;
+    max-width: 1200px;
+}
+li{
+    list-style: none;
+}
+
+.search{
+    position: absolute;
+    top: 20px;
+    right: 250px;
+}
+.mod_search_in{
+    border: solid 1px #c9c9c9;
+    padding: 0 33px 0 11px;
+    height: 35px;
+    line-height: 35px;
+}
+.search_in{
+    height: 33px;
+    width: 150px;
+    line-height: 33px;
+    border: none;
+    font-size: 16px;
+    text-align: left;
+}
+input {
+    outline: medium;
+}
+.search_in_bt {
+    position: absolute;
+    top: 2px;
+    right: 1px;
+    border: 0 none;
+    width: 33px;
+    height: 34px;
+    overflow: hidden;
+    background-image: url(picture/searchIcon.jpg);
+    background-size: 33px 34px;
+    background-repeat: no-repeat;
+}
+
+button {
+    cursor: pointer;
+}

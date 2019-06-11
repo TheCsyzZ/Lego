@@ -1,0 +1,167 @@
+*{
+    margin: 0;
+    padding:0;
+}
+body{
+    min-width: 1200px;
+    background:no-repeat url(picture/bg5.jpg);
+    background-size:cover ;
+    background-attachment: fixed;
+}
+.logo{
+    position: absolute;
+    top: 12px;
+    left: 0;
+}
+.menu_list{
+    position: absolute;
+    top: -5px;
+    left: 185px;
+}
+.menu_list2{
+    position: absolute;
+    top: -5px;
+    right: 0px;
+}
+.listItem{
+    float: left;
+}
+.item{
+    top: 0px;
+    font-size: 18px;
+    float: left;
+    padding:0 32px;
+    text-decoration: none;
+    color: #000000;
+    line-height: 90px;
+}
+#head{
+    /*background-color: #666;*/
+}
+.top_bar{
+    background-color: #fff;
+    position: relative;
+    opacity: 0.618;
+}
+.bar_inner{
+    padding-top: 80px;
+    position: relative;
+    margin:0 auto;
+    max-width: 1200px;
+}
+ul,li{
+    list-style: none;
+}
+
+.search{
+    position: absolute;
+    top: 20px;
+    right: 250px;
+}
+.mod_search_in{
+    border: solid 1px #c9c9c9;
+    padding: 0 33px 0 11px;
+    height: 35px;
+    line-height: 35px;
+}
+.search_in{
+    height: 33px;
+    width: 150px;
+    line-height: 33px;
+    border: none;
+    font-size: 16px;
+    text-align: left;
+}
+input {
+    outline: medium;
+}
+.search_in_bt {
+    position: absolute;
+    top: 2px;
+    right: 1px;
+    border: 0 none;
+    width: 33px;
+    height: 34px;
+    overflow: hidden;
+    background-image: url(picture/searchIcon.jpg);
+    background-size: 33px 34px;
+    background-repeat: no-repeat;
+}
+
+button {
+    cursor: pointer;
+}
+/*导航栏*/
+.singer{
+    width: 1200px;
+    height: 300px;
+    margin: 10px auto;
+    position: relative;
+
+}
+.area{
+    position: relative;
+    margin-bottom: 30px;
+}
+.singer-title{
+    border-bottom: 1px solid #f95645;
+}
+.language{
+    display: inline-block;
+    height: 50px;
+    line-height: 50px;
+    padding-left: 20px;
+    font-size: 30px;
+    font-weight: bolder;
+    letter-spacing: 3px;
+    color: #703910;
+
+}
+.more{
+    display: inline-block;
+    height: 50px;
+    line-height: 50px;
+    font-size: 30px;
+    font-weight: bolder;
+    letter-spacing: 3px;
+    color: #703910;
+    position: absolute;
+    right: 0;
+    cursor: pointer;
+}
+.singer-list{
+    height: 200px;
+    width: auto;
+    padding: 20px;
+
+}
+.singer-information{
+    display: inline-block;
+    position: relative;
+    margin: 10px 30px;
+}
+.singer-head{
+    width: 160px;
+    height: 150px;
+    cursor: pointer;
+}
+.singer2{
+    width: 150px;
+    height: 150px;
+    border: 2px solid #cacbcc;
+    border-radius: 90px;
+}
+.singer-name{
+    margin-top: 15px;
+    font-size: 18px;
+    font-weight: bolder;
+    color: #123555;
+    width: 160px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    cursor: pointer;
+}
+.more:hover,.singer-name:hover,.singer-head:hover{
+    text-decoration: underline;
+}

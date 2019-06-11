@@ -1,0 +1,64 @@
+@charset "utf-8";
+/* CSS Document */
+
+.search{
+	height:50px;
+	font-family:"Comic Sans MS","幼圆","黑体",sans-serif;
+	text-align:center;
+}
+.search1{
+	height:50px;
+	width:100px;
+	font-family:"Comic Sans MS","幼圆","黑体",sans-serif;
+	font-size:20px;
+}
+.search3{
+	height:50px;
+	width:100px;
+	font-family:"Comic Sans MS","幼圆","黑体",sans-serif;
+	font-size:20px;
+}
+.search2{
+	height:50px;
+	width:600px;
+	font-family:"Comic Sans MS","幼圆","黑体",sans-serif;
+	font-size:20px;
+}
+.Search{
+	list-style:none;
+	height:50px;
+}
+li{
+	display: inline-block;
+    padding:0 0;
+    text-decoration: none;
+    color: #000000;	
+	/*float:left;*/
+}
+.cons{
+	list-style:none;
+	height:50px;
+	
+}
+.cons1{
+	width:100px;
+	height:50px;
+	font-family:"Comic Sans MS","幼圆","黑体",sans-serif;
+	font-size:25px;
+
+}
+.music{
+	font-size:13px;
+}
+.song{
+	padding:20px 43px 0px 44px;
+	/*float:left;*/
+}
+a{
+	text-decoration:none;
+	color: #000;
+}
+a:hover{
+	color:limegreen;
+}
+

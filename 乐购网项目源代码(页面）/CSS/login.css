@@ -1,0 +1,26 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{
+	background-image: url(../LOGIN_picture/shx_background.jpg); 
+	background-attachment: fixed;
+	font-family:"Comic Sans MS","幼圆","黑体",sans-serif;
+}
+table{
+	font-family:"Comic Sans MS","幼圆","黑体",sans-serif;
+}
+title{
+	font-family:"Comic Sans MS","幼圆","黑体",sans-serif;
+}
+a{
+	color:dodgerblue;
+}
+.submit{
+	cursor:pointer;
+}
+.submit2{
+	cursor:pointer;
+}
+.sex{
+	cursor:pointer;
+}

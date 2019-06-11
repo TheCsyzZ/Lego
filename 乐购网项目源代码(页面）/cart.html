@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <title>购物车</title>
+    <link rel="stylesheet" href="CSS/Shopping-cart.css">
+    <link rel="shortcut icon" href="icon.ico">
+    <script src="JS/EnterSearch.js"></script>
+    <script>
+        window.onload=function(){
+            var checkAll=document.getElementById('All');
+            var div=document.getElementsByClassName('block-left');
+            checkAll.onclick=function () {
+                if(checkAll.checked==true){
+                    for(var i=0;i<div.length;i++) {
+                        var CheckBox = div[i].getElementsByTagName('input');
+                        for (var j = 0; j < CheckBox.length; j++) {
+                            CheckBox[j].checked = true;
+                        }
+                    }
+                }
+                else{
+                    for(var i=0;i<div.length;i++) {
+                        var CheckBox = div[i].getElementsByTagName('input');
+                        for (var j = 0; j < CheckBox.length; j++) {
+                            CheckBox[j].checked = false;
+                        }
+                    }
+                }
+            }
+
+        }
+    </script>
+</head>
+<body>
+<div id="head">
+    <div class="top_bar">
+    <div class="bar_inner">
+        <h1 class="logo"><a href="index.html"><img src="CSS/picture/logo.png" alt="logo" style="width: 200px;height: 60px;"></a></h1>
+        <ul class="menu_list">
+            <li class="listItem"><a href="index.html" class="item">首页</a></li>
+            <li class="listItem"><a href="singer.html" class="item">歌手</a></li>
+            <li class="listItem"><a href="ranklist.html" class="item">排行榜</a></li>
+            <li class="listItem"><a href="store.html" class="item">商城</a></li>
+            <li class="listItem"><a href="cart.html" class="item">购物车</a></li>
+        </ul>
+        <div class="search">
+            <div class="mod_search_in">
+                <input class="search_in" aria-label="请输入搜索内容" type="text" placeholder="请输入搜索内容" accesskey="s"onkeydown="huichesearch()">
+                <button type="submit" class="search_in_bt"></button>
+            </div>
+        </div>
+        <ul class="menu_list2">
+            <li class="listItem"><a href="sign_in.html" class="item">登录</a></li>
+            <li class="listItem"><a href="sign_up.html" class="item">注册</a></li>
+        </ul>
+    </div>
+</div>
+</div>
+<div id="mainContent">
+    <div id="header">
+        <h1 id="logo">
+            <a href="index.html">
+                <img src="CSS/picture/购物车.png" alt="购物车图标">
+                购物车
+            </a>
+        </h1>
+        <div id="shopSearch">
+            <div id="searchOption">
+                <ul id="searchOp">
+                    <select name="购买类型" id="option">
+                        <option value="单曲">单曲</option>
+                        <option value="专辑">专辑</option>
+                    </select>
+
+                </ul>
+
+            </div>
+            <div id="searchBorder">
+                <form action="#" name="search" style="height: 40px;">
+                    <div id="searchButton">
+                        <button id="search-btn" type="submit">搜索</button>
+                    </div>
+                    <div id="searchBlank">
+                        <input type="text" aria-label="请输入搜索关键字" placeholder="请输入搜索关键字" id="inputSearch" accesskey="s">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="contentMenu">
+        <span class="cm-list">分类</span>
+        <span class="cm-list">单价</span>
+        <span class="cm-list">优惠</span>
+        <span class="cm-list">合计</span>
+        <span class="cm-list">操作</span>
+    </div>
+    <div id=contentBody>
+        <ul style="max-width: 1000px;min-height: 700px">
+            <li class="playBlock">
+                <div class="block-left">
+                    <input type="checkbox" class="play" value="true">
+                    <img src="CSS/picture/play/6.jpg" class="play-img" alt="6">
+                    <div class="song-singer">
+                        <a href="#" class="song">6</a>
+                        <a href="#" class="singer">吴亦凡</a>
+                    </div>
+                </div>
+                <div class="block-right">
+                    <span class=" classes">专辑</span>
+                    <span class="single-price">5.00</span>
+                    <span class="discount">0.00</span>
+                    <span class="sum-price">5.00</span>
+                    <div class="cm-list" style="display: inline-block;padding-left: 2px">
+                        <div class="list-column">删除</div>
+                        <div class="list-column">喜欢</div>
+                        <div class="list-column">分享</div>
+                    </div>
+                </div>
+            </li>
+            <!-- 第一行 -->
+            <li class="playBlock">
+                <div class="block-left">
+                    <input type="checkbox" class="play" value="true">
+                    <img src="CSS/picture/play/伟大的渺小.jpg" class="play-img" alt="伟大的渺小">
+                    <div class="song-singer">
+                        <a href="#" class="song">伟大的渺小</a>
+                        <a href="#" class="singer">林俊杰</a>
+                    </div>
+                </div>
+                <div class="block-right">
+                    <span class=" classes">专辑</span>
+                    <span class=" single-price">4.00</span>
+                    <span class=" discount">0.00</span>
+                    <span class=" sum-price">4.00</span>
+                    <div class="cm-list" style="display: inline-block;padding-left: 2px">
+                        <div class="list-column">删除</div>
+                        <div class="list-column">喜欢</div>
+                        <div class="list-column">分享</div>
+                    </div>
+                </div>
+            </li>
+            <!-- 第二行-->
+            <li class="playBlock">
+                <div class="block-left">
+                    <input type="checkbox" class="play" value="true">
+                    <img src="CSS/picture/play/reputation.jpg" class="play-img" alt="reputation">
+                    <div class="song-singer">
+                        <a href="#" class="song">Reputation</a>
+                        <a href="#" class="singer">Taylor Swift</a>
+                    </div>
+                </div>
+                <div class="block-right">
+                    <span class="classes">专辑</span>
+                    <span class="single-price">20.00</span>
+                    <span class="discount">0.00</span>
+                    <span class="sum-price">20.00</span>
+                    <div class="cm-list" style="display: inline-block;padding-left: 2px">
+                        <div class="list-column">删除</div>
+                        <div class="list-column">喜欢</div>
+                        <div class="list-column">分享</div>
+                    </div>
+                </div>
+            </li>
+            <!-- 第三行 -->
+            <li class="playBlock">
+                <div class="block-left">
+                    <input type="checkbox" class="play" value="true">
+                    <img src="CSS/picture/play/像风一样.jpg" class="play-img" alt="像风一样">
+                    <div class="song-singer">
+                        <a href="#" class="song">像风一样</a>
+                        <a href="#" class="singer">薛之谦</a>
+                    </div>
+                </div>
+                <div class="block-right">
+                    <span class="classes">单曲</span>
+                    <span class="single-price">2.00</span>
+                    <span class=" discount">0.00</span>
+                    <span class=" sum-price">2.00</span>
+                    <div class="cm-list" style="display: inline-block;padding-left: 2px">
+                        <div class="list-column">删除</div>
+                        <div class="list-column">喜欢</div>
+                        <div class="list-column">分享</div>
+                    </div>
+                </div>
+            </li>
+            <!-- 第四行-->
+            <li class="playBlock">
+                <div class="block-left">
+                    <input type="checkbox" class="play" value="true">
+                    <img src="CSS/picture/play/告白气球.jpg" class="play-img" alt="告白气球">
+                    <div class="song-singer">
+                        <a href="#" class="song">告白气球</a>
+                        <a href="#" class="singer">周杰伦</a>
+                    </div>
+                </div>
+                <div class="block-right">
+                    <span class=" classes">单曲</span>
+                    <span class=" single-price">5.00</span>
+                    <span class=" discount">0.80</span>
+                    <span class=" sum-price">4.00</span>
+                    <div class="cm-list" style="display: inline-block;padding-left: 2px">
+                        <div class="list-column">删除</div>
+                        <div class="list-column">喜欢</div>
+                        <div class="list-column">分享</div>
+                    </div>
+                </div>
+            </li>
+            <!-- 第五行-->
+        </ul>
+    </div>
+    <div id="payBar">
+        <div id="float-payBar">
+            <div id="selectAll">
+                <div id="selectAll-checkbox">
+                    <label for="All">全选
+                    <input type="checkbox" style="position: absolute; top: 20px; left: 5px;z-index: 0;" name="select-all" id="All">
+
+                    </label>
+                </div>
+
+            </div>
+            <div id="bar-operations">
+                <a href="#" id="Delete">删除</a>
+                <a href="#" id="Collect">喜欢</a>
+                <a href="#" id="Share">分享</a>
+            </div>
+            <div id="bar-right">
+                <div id="sum">
+                    <span class="text-font">已选</span>
+                    <span class="text-number">0</span>
+                    <span class="text-font">件,</span>
+                    <span class="text-font">总计：</span>
+                    <span class="text-number" style="margin-right: 20px">0.00</span>
+                    <div class="pay">
+                        <a href="#">支付</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+<div class="foot">
+    <div style="text-align:center;height: 100px; font:normal 14px/24px 'MicroSoft YaHei';color: #ffffff;">
+        <br>
+        <p>青春一晌，愿把浮名，换了代码轻狂</p>
+        <p>from: 喵喵喵小分队</p>
+    </div>
+</div>
+
+</body>
+</html>

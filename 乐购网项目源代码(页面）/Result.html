@@ -1,0 +1,431 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>乐购|搜索结果</title>
+	<link rel="shortcut icon" href="icon.ico" >
+	<script src="JS/EnterSearch.js"></script>
+<style>
+	@import url(CSS/result_main.css);
+	@import url(CSS/result.css);
+</style>
+</head>
+
+<body>
+<div class="top_bar">
+    <div class="bar_inner">
+        <h1 class="logo"><a href="index.html"><img src="CSS/picture/logo.png" alt="logo" style="width: 200px;height: 60px;"></a></h1>
+        <ul class="menu_list">
+            <li class="listItem"><a href="index.html" class="item">首页</a></li>
+            <li class="listItem"><a href="singer.html" class="item">歌手</a></li>
+            <li class="listItem"><a href="ranklist.html" class="item">排行榜</a></li>
+            <li class="listItem"><a href="store.html" class="item">商城</a></li>
+			<li class="listItem"><a href="cart.html" class="item">购物车</a></li>
+        </ul>
+		<ul class="menu_list2">
+			<li class="listItem"><a href="sign_in.html" class="item">登录</a></li>
+			<li class="listItem"><a href="sign_up.html" class="item">注册</a></li>
+		</ul>
+    </div>
+</div>
+<br>
+<div style="max-width: 1200px;margin: 0 auto">
+	<ul class="Search" align="center">
+	<li><select class="search1">
+		<option value="单曲">单曲</option>
+		<option value="歌词">歌词</option>
+		<option value="歌手">歌手</option>
+		<option value="专辑">专辑</option>
+		<option value="MV">MV</option>
+	</select></li>
+	<li><input type="search" width="500px" height="200px" class="search2" placeholder="杰" onkeydown="huichesearch()"></li>
+	<li><input type="submit" value="搜索" class="search3"></li></ul>
+</div>
+<br>
+<p class="tit1">相关歌手</p>
+<br>
+<div style="max-width: 1200px;margin: 0 auto;" >
+	<ul>
+		<li class="charac">
+			<a href="#"><img src="Result_picture/shx_imgimg1.jpg" class="charac1"></a>
+			<br>
+			<br>
+			<p align="center"><a href="#">林俊杰</a></p>
+		</li>
+		<li class="charac">
+			<a href="#"><img src="Result_picture/shx_imgimg2.jpg" class="charac2"></a>
+			<br>
+			<br>
+			<p align="center"><a href="#">张杰</a></p>
+		</li>
+		<li class="charac">
+			<a href="#"><img src="Result_picture/shx_imgimg3.jpg" class="charac3"></a>
+			<br>
+			<br>
+			<p align="center"><a href="#">周杰伦</a></p>
+		</li>
+	</ul>
+</div>
+
+
+<br>
+<br>
+<p class="tit1">相关专辑</p>
+<br>
+<div style="max-width: 1300px;margin: 0 auto;" >
+	<ul>
+		<li class="connect"><a href="#"><img src="Result_picture/shx_imgimg4.jpg" class="connec"></a>
+			<p align="center" class="music"><a href="#">林俊杰</a></p>
+			<p align="center" class="music"><a href="#">100天</a></p>
+			<p align="center" class="music">发行时间：2015-12-03</p>
+		</li>
+		<li class="connect"><a href="#"><img src="Result_picture/shx_imgimg5.jpg" class="connec"></a>
+			<p align="center" class="music"><a href="#">林俊杰</a></p>
+			<p align="center" class="music"><a href="#">只要有你的地方</a></p>
+			<p align="center" class="music">发行时间：2015-11-23</p>
+		</li>
+		<li class="connect"><a href="#"><img src="Result_picture/shx_imgimg6.jpg" class="connec"></a>
+			<p align="center" class="music"><a href="#">林俊杰</a></p>
+			<p align="center" class="music"><a href="#">期待爱</a></p>
+			<p align="center" class="music">发行时间：2015-11-02</p>
+		</li>
+		<li class="connect"><a href="#"><img src="Result_picture/shx_imgimg7.jpg" class="connec"></a>
+			<p align="center" class="music"><a href="#">林俊杰</a></p>
+			<p align="center" class="music"><a href="#">I Pray For You</a></p>
+			<p align="center" class="music">发行时间：2015-07-07</p>
+		</li>
+		<li class="connect"><a href="#"><img src="Result_picture/shx_imgimg8.jpg" class="connec"></a>
+			<p align="center" class="music"><a href="#">林俊杰</a></p>
+			<p align="center" class="music"><a href="#">学不会</a></p>
+			<p align="center" class="music">发行时间：2011-12-29</p>
+		</li>
+		<li class="connect"><a href="#"><img src="Result_picture/shx_imgimg9.jpg" class="connec"></a>
+			<p align="center" class="music"><a href="#">林俊杰</a></p>
+			<p align="center" class="music"><a href="#">记得</a></p>
+			<p align="center" class="music">发行时间：2011-05-12</p>
+		</li>
+		<li class="connect"><a href="#"><img src="Result_picture/shx_imgimg10.jpg" class="connec"></a>
+			<p align="center" class="music"><a href="#">张杰</a></p>
+			<p align="center" class="music"><a href="#">Torches</a></p>
+			<p align="center" class="music">发行时间：2017-06-09</p>
+		</li>
+		<li class="connect"><a href="#"><img src="Result_picture/shx_imgimg11.jpg" class="connec"></a>
+			<p align="center" class="music"><a href="#">张杰</a></p>
+			<p align="center" class="music"><a href="#">星辰</a></p>
+			<p align="center" class="music">发行时间：2017-04-13</p>
+		</li>
+		<li class="connect"><a href="#"><img src="Result_picture/shx_imgimg12.jpg" class="connec"></a>
+			<p align="center" class="music"><a href="#">张杰</a></p>
+			<p align="center" class="music"><a href="#">三生三世</a></p>
+			<p align="center" class="music">发行时间：2017-01-12</p>
+		</li>
+		<li class="connect"><a href="#"><img src="Result_picture/shx_imgimg13.jpg" class="connec"></a>
+			<p align="center" class="music"><a href="#">张杰</a></p>
+			<p align="center" class="music"><a href="#">Everything Will Say</a></p>
+			<p align="center" class="music">发行时间：2016-12-12</p>
+		</li>
+		<li class="connect"><a href="#"><img src="Result_picture/shx_imgimg14.jpg" class="connec"></a>
+			<p align="center" class="music"><a href="#">张杰</a></p>
+			<p align="center" class="music"><a href="#">一念之间</a></p>
+			<p align="center" class="music">发行时间：2015-06-24</p>
+		</li>
+		<li class="connect"><a href="#"><img src="Result_picture/shx_imgimg15.jpg" class="connec"></a>
+			<p align="center" class="music"><a href="#">张杰</a></p>
+			<p align="center" class="music"><a href="#">娑婆世界</a></p>
+			<p align="center" class="music">发行时间：2015-05-28</p>
+		</li>
+		<li class="connect"><a href="#"><img src="Result_picture/shx_imgimg16.jpg" class="connec"></a>
+			<p align="center" class="music"><a href="#">张杰</a></p>
+			<p align="center" class="music"><a href="#">My Sunshine</a></p>
+			<p align="center" class="music">发行时间：2014-12-30</p>
+		</li>
+		<li class="connect"><a href="#"><img src="Result_picture/shx_imgimg17.jpg" class="connec"></a>
+			<p align="center" class="music"><a href="#">张杰</a></p>
+			<p align="center" class="music"><a href="#">很奇怪我爱你</a></p>
+			<p align="center" class="music">发行时间：2014-09-17</p>
+		</li>
+		<li class="connect"><a href="#"><img src="Result_picture/shx_imgimg18.jpg" class="connec"></a>
+			<p align="center" class="music"><a href="#">周杰伦</a></p>
+			<p align="center" class="music"><a href="#">哎哟，不错哦</a></p>
+			<p align="center" class="music">发行时间：2015-01-14</p>
+		</li>
+		<li class="connect"><a href="#"><img src="Result_picture/shx_imgimg19.jpg" class="connec"></a>
+			<p align="center" class="music"><a href="#">周杰伦</a></p>
+			<p align="center" class="music"><a href="#">不能说的秘密</a></p>
+			<p align="center" class="music">发行时间：2011-05-12</p>
+		</li>
+		<li class="connect"><a href="#"><img src="Result_picture/shx_imgimg20.jpg" class="connec"></a>
+			<p align="center" class="music"><a href="#">周杰伦</a></p>
+			<p align="center" class="music"><a href="#">魔杰座</a></p>
+			<p align="center" class="music">发行时间：2015-11-02</p>
+		</li>
+			<li class="connect"><a href="#"><img src="Result_picture/shx_imgimg4.jpg" class="connec"></a>
+			<p align="center" class="music"><a href="#">林俊杰</a></p>
+			<p align="center" class="music"><a href="#">100天</a></p>
+			<p align="center" class="music">发行时间：2015-12-03</p>
+		</li>
+		<li class="connect"><a href="#"><img src="Result_picture/shx_imgimg5.jpg" class="connec"></a>
+			<p align="center" class="music"><a href="#">林俊杰</a></p>
+			<p align="center" class="music"><a href="#">只要有你的地方</a></p>
+			<p align="center" class="music">发行时间：2015-11-23</p>
+		</li>
+		<li class="connect"><a href="#"><img src="Result_picture/shx_imgimg6.jpg" class="connec"></a>
+			<p align="center" class="music"><a href="#">林俊杰</a></p>
+			<p align="center" class="music"><a href="#">期待爱</a></p>
+			<p align="center" class="music">发行时间：2015-11-02</p>
+		</li>
+		<li class="connect"><a href="#"><img src="Result_picture/shx_imgimg7.jpg" class="connec"></a>
+			<p align="center" class="music"><a href="#">林俊杰</a></p>
+			<p align="center" class="music"><a href="#">I Pray For You</a></p>
+			<p align="center" class="music">发行时间：2015-07-07</p>
+		</li>
+		<li class="connect"><a href="#"><img src="Result_picture/shx_imgimg8.jpg" class="connec"></a>
+			<p align="center" class="music"><a href="#">林俊杰</a></p>
+			<p align="center" class="music"><a href="#">学不会</a></p>
+			<p align="center" class="music">发行时间：2011-12-29</p>
+		</li>
+		<li class="connect"><a href="#"><img src="Result_picture/shx_imgimg9.jpg" class="connec"></a>
+			<p align="center" class="music"><a href="#">林俊杰</a></p>
+			<p align="center" class="music"><a href="#">记得</a></p>
+			<p align="center" class="music">发行时间：2011-05-12</p>
+		</li>
+		<li class="connect"><a href="#"><img src="Result_picture/shx_imgimg10.jpg" class="connec"></a>
+			<p align="center" class="music"><a href="#">张杰</a></p>
+			<p align="center" class="music"><a href="#">Torches</a></p>
+			<p align="center" class="music">发行时间：2017-06-09</p>
+		</li>
+		<li class="connect"><a href="#"><img src="Result_picture/shx_imgimg11.jpg" class="connec"></a>
+			<p align="center" class="music"><a href="#">张杰</a></p>
+			<p align="center" class="music"><a href="#">星辰</a></p>
+			<p align="center" class="music">发行时间：2017-04-13</p>
+		</li>
+		<li class="connect"><a href="#"><img src="Result_picture/shx_imgimg12.jpg" class="connec"></a>
+			<p align="center" class="music"><a href="#">张杰</a></p>
+			<p align="center" class="music"><a href="#">三生三世</a></p>
+			<p align="center" class="music">发行时间：2017-01-12</p>
+		</li>
+		<li class="connect"><a href="#"><img src="Result_picture/shx_imgimg13.jpg" class="connec"></a>
+			<p align="center" class="music"><a href="#">张杰</a></p>
+			<p align="center" class="music"><a href="#">Everything Will Say</a></p>
+			<p align="center" class="music">发行时间：2016-12-12</p>
+		</li>
+		<li class="connect"><a href="#"><img src="Result_picture/shx_imgimg14.jpg" class="connec"></a>
+			<p align="center" class="music"><a href="#">张杰</a></p>
+			<p align="center" class="music"><a href="#">一念之间</a></p>
+			<p align="center" class="music">发行时间：2015-06-24</p>
+		</li>
+		<li class="connect"><a href="#"><img src="Result_picture/shx_imgimg15.jpg" class="connec"></a>
+			<p align="center" class="music"><a href="#">张杰</a></p>
+			<p align="center" class="music"><a href="#">娑婆世界</a></p>
+			<p align="center" class="music">发行时间：2015-05-28</p>
+		</li>
+		<li class="connect"><a href="#"><img src="Result_picture/shx_imgimg16.jpg" class="connec"></a>
+			<p align="center" class="music"><a href="#">张杰</a></p>
+			<p align="center" class="music"><a href="#">My Sunshine</a></p>
+			<p align="center" class="music">发行时间：2014-12-30</p>
+		</li>
+		<li class="connect"><a href="#"><img src="Result_picture/shx_imgimg17.jpg" class="connec"></a>
+			<p align="center" class="music"><a href="#">张杰</a></p>
+			<p align="center" class="music"><a href="#">很奇怪我爱你</a></p>
+			<p align="center" class="music">发行时间：2014-09-17</p>
+		</li>
+		<li class="connect"><a href="#"><img src="Result_picture/shx_imgimg18.jpg" class="connec"></a>
+			<p align="center" class="music"><a href="#">周杰伦</a></p>
+			<p align="center" class="music"><a href="#">哎哟，不错哦</a></p>
+			<p align="center" class="music">发行时间：2015-01-14</p>
+		</li>
+		<li class="connect"><a href="#"><img src="Result_picture/shx_imgimg19.jpg" class="connec"></a>
+			<p align="center" class="music"><a href="#">周杰伦</a></p>
+			<p align="center" class="music"><a href="#">不能说的秘密</a></p>
+			<p align="center" class="music">发行时间：2011-05-12</p>
+		</li>
+		<li class="connect"><a href="#"><img src="Result_picture/shx_imgimg20.jpg" class="connec"></a>
+			<p align="center" class="music"><a href="#">周杰伦</a></p>
+			<p align="center" class="music"><a href="#">魔杰座</a></p>
+			<p align="center" class="music">发行时间：2015-11-02</p>
+		</li>
+			<li class="connect"><a href="#"><img src="Result_picture/shx_imgimg4.jpg" class="connec"></a>
+			<p align="center" class="music"><a href="#">林俊杰</a></p>
+			<p align="center" class="music"><a href="#">100天</a></p>
+			<p align="center" class="music">发行时间：2015-12-03</p>
+		</li>
+		<li class="connect"><a href="#"><img src="Result_picture/shx_imgimg5.jpg" class="connec"></a>
+			<p align="center" class="music"><a href="#">林俊杰</a></p>
+			<p align="center" class="music"><a href="#">只要有你的地方</a></p>
+			<p align="center" class="music">发行时间：2015-11-23</p>
+		</li>
+		<li class="connect"><a href="#"><img src="Result_picture/shx_imgimg6.jpg" class="connec"></a>
+			<p align="center" class="music"><a href="#">林俊杰</a></p>
+			<p align="center" class="music"><a href="#">期待爱</a></p>
+			<p align="center" class="music">发行时间：2015-11-02</p>
+		</li>
+		<li class="connect"><a href="#"><img src="Result_picture/shx_imgimg7.jpg" class="connec"></a>
+			<p align="center" class="music"><a href="#">林俊杰</a></p>
+			<p align="center" class="music"><a href="#">I Pray For You</a></p>
+			<p align="center" class="music">发行时间：2015-07-07</p>
+		</li>
+		<li class="connect"><a href="#"><img src="Result_picture/shx_imgimg8.jpg" class="connec"></a>
+			<p align="center" class="music"><a href="#">林俊杰</a></p>
+			<p align="center" class="music"><a href="#">学不会</a></p>
+			<p align="center" class="music">发行时间：2011-12-29</p>
+		</li>
+		<li class="connect"><a href="#"><img src="Result_picture/shx_imgimg9.jpg" class="connec"></a>
+			<p align="center" class="music"><a href="#">林俊杰</a></p>
+			<p align="center" class="music"><a href="#">记得</a></p>
+			<p align="center" class="music">发行时间：2011-05-12</p>
+		</li>
+		<li class="connect"><a href="#"><img src="Result_picture/shx_imgimg10.jpg" class="connec"></a>
+			<p align="center" class="music"><a href="#">张杰</a></p>
+			<p align="center" class="music"><a href="#">Torches</a></p>
+			<p align="center" class="music">发行时间：2017-06-09</p>
+		</li>
+		<li class="connect"><a href="#"><img src="Result_picture/shx_imgimg11.jpg" class="connec"></a>
+			<p align="center" class="music"><a href="#">张杰</a></p>
+			<p align="center" class="music"><a href="#">星辰</a></p>
+			<p align="center" class="music">发行时间：2017-04-13</p>
+		</li>
+		<li class="connect"><a href="#"><img src="Result_picture/shx_imgimg12.jpg" class="connec"></a>
+			<p align="center" class="music"><a href="#">张杰</a></p>
+			<p align="center" class="music"><a href="#">三生三世</a></p>
+			<p align="center" class="music">发行时间：2017-01-12</p>
+		</li>
+		<li class="connect"><a href="#"><img src="Result_picture/shx_imgimg13.jpg" class="connec"></a>
+			<p align="center" class="music"><a href="#">张杰</a></p>
+			<p align="center" class="music"><a href="#">Everything Will Say</a></p>
+			<p align="center" class="music">发行时间：2016-12-12</p>
+		</li>
+		<li class="connect"><a href="#"><img src="Result_picture/shx_imgimg14.jpg" class="connec"></a>
+			<p align="center" class="music"><a href="#">张杰</a></p>
+			<p align="center" class="music"><a href="#">一念之间</a></p>
+			<p align="center" class="music">发行时间：2015-06-24</p>
+		</li>
+		<li class="connect"><a href="#"><img src="Result_picture/shx_imgimg15.jpg" class="connec"></a>
+			<p align="center" class="music"><a href="#">张杰</a></p>
+			<p align="center" class="music"><a href="#">娑婆世界</a></p>
+			<p align="center" class="music">发行时间：2015-05-28</p>
+		</li>
+		<li class="connect"><a href="#"><img src="Result_picture/shx_imgimg16.jpg" class="connec"></a>
+			<p align="center" class="music"><a href="#">张杰</a></p>
+			<p align="center" class="music"><a href="#">My Sunshine</a></p>
+			<p align="center" class="music">发行时间：2014-12-30</p>
+		</li>
+		<li class="connect"><a href="#"><img src="Result_picture/shx_imgimg17.jpg" class="connec"></a>
+			<p align="center" class="music"><a href="#">张杰</a></p>
+			<p align="center" class="music"><a href="#">很奇怪我爱你</a></p>
+			<p align="center" class="music">发行时间：2014-09-17</p>
+		</li>
+		<li class="connect"><a href="#"><img src="Result_picture/shx_imgimg18.jpg" class="connec"></a>
+			<p align="center" class="music"><a href="#">周杰伦</a></p>
+			<p align="center" class="music"><a href="#">哎哟，不错哦</a></p>
+			<p align="center" class="music">发行时间：2015-01-14</p>
+		</li>
+		<li class="connect"><a href="#"><img src="Result_picture/shx_imgimg19.jpg" class="connec"></a>
+			<p align="center" class="music"><a href="#">周杰伦</a></p>
+			<p align="center" class="music"><a href="#">不能说的秘密</a></p>
+			<p align="center" class="music">发行时间：2011-05-12</p>
+		</li>
+		<li class="connect"><a href="#"><img src="Result_picture/shx_imgimg20.jpg" class="connec"></a>
+			<p align="center" class="music"><a href="#">周杰伦</a></p>
+			<p align="center" class="music"><a href="#">魔杰座</a></p>
+			<p align="center" class="music">发行时间：2015-11-02</p>
+		</li>
+		<li class="connect"><a href="#"><img src="Result_picture/shx_imgimg4.jpg" class="connec"></a>
+			<p align="center" class="music"><a href="#">林俊杰</a></p>
+			<p align="center" class="music"><a href="#">100天</a></p>
+			<p align="center" class="music">发行时间：2015-12-03</p>
+		</li>
+		<li class="connect"><a href="#"><img src="Result_picture/shx_imgimg5.jpg" class="connec"></a>
+			<p align="center" class="music"><a href="#">林俊杰</a></p>
+			<p align="center" class="music"><a href="#">只要有你的地方</a></p>
+			<p align="center" class="music">发行时间：2015-11-23</p>
+		</li>
+		<li class="connect"><a href="#"><img src="Result_picture/shx_imgimg6.jpg" class="connec"></a>
+			<p align="center" class="music"><a href="#">林俊杰</a></p>
+			<p align="center" class="music"><a href="#">期待爱</a></p>
+			<p align="center" class="music">发行时间：2015-11-02</p>
+		</li>
+		<li class="connect"><a href="#"><img src="Result_picture/shx_imgimg7.jpg" class="connec"></a>
+			<p align="center" class="music"><a href="#">林俊杰</a></p>
+			<p align="center" class="music"><a href="#">I Pray For You</a></p>
+			<p align="center" class="music">发行时间：2015-07-07</p>
+		</li>
+		<li class="connect"><a href="#"><img src="Result_picture/shx_imgimg8.jpg" class="connec"></a>
+			<p align="center" class="music"><a href="#">林俊杰</a></p>
+			<p align="center" class="music"><a href="#">学不会</a></p>
+			<p align="center" class="music">发行时间：2011-12-29</p>
+		</li>
+		<li class="connect"><a href="#"><img src="Result_picture/shx_imgimg9.jpg" class="connec"></a>
+			<p align="center" class="music"><a href="#">林俊杰</a></p>
+			<p align="center" class="music"><a href="#">记得</a></p>
+			<p align="center" class="music">发行时间：2011-05-12</p>
+		</li>
+		<li class="connect"><a href="#"><img src="Result_picture/shx_imgimg10.jpg" class="connec"></a>
+			<p align="center" class="music"><a href="#">张杰</a></p>
+			<p align="center" class="music"><a href="#">Torches</a></p>
+			<p align="center" class="music">发行时间：2017-06-09</p>
+		</li>
+		<li class="connect"><a href="#"><img src="Result_picture/shx_imgimg11.jpg" class="connec"></a>
+			<p align="center" class="music"><a href="#">张杰</a></p>
+			<p align="center" class="music"><a href="#">星辰</a></p>
+			<p align="center" class="music">发行时间：2017-04-13</p>
+		</li>
+		<li class="connect"><a href="#"><img src="Result_picture/shx_imgimg12.jpg" class="connec"></a>
+			<p align="center" class="music"><a href="#">张杰</a></p>
+			<p align="center" class="music"><a href="#">三生三世</a></p>
+			<p align="center" class="music">发行时间：2017-01-12</p>
+		</li>
+		<li class="connect"><a href="#"><img src="Result_picture/shx_imgimg13.jpg" class="connec"></a>
+			<p align="center" class="music"><a href="#">张杰</a></p>
+			<p align="center" class="music"><a href="#">Everything Will Say</a></p>
+			<p align="center" class="music">发行时间：2016-12-12</p>
+		</li>
+		<li class="connect"><a href="#"><img src="Result_picture/shx_imgimg14.jpg" class="connec"></a>
+			<p align="center" class="music"><a href="#">张杰</a></p>
+			<p align="center" class="music"><a href="#">一念之间</a></p>
+			<p align="center" class="music">发行时间：2015-06-24</p>
+		</li>
+		<li class="connect"><a href="#"><img src="Result_picture/shx_imgimg15.jpg" class="connec"></a>
+			<p align="center" class="music"><a href="#">张杰</a></p>
+			<p align="center" class="music"><a href="#">娑婆世界</a></p>
+			<p align="center" class="music">发行时间：2015-05-28</p>
+		</li>
+		<li class="connect"><a href="#"><img src="Result_picture/shx_imgimg16.jpg" class="connec"></a>
+			<p align="center" class="music"><a href="#">张杰</a></p>
+			<p align="center" class="music"><a href="#">My Sunshine</a></p>
+			<p align="center" class="music">发行时间：2014-12-30</p>
+		</li>
+		<li class="connect"><a href="#"><img src="Result_picture/shx_imgimg17.jpg" class="connec"></a>
+			<p align="center" class="music"><a href="#">张杰</a></p>
+			<p align="center" class="music"><a href="#">很奇怪我爱你</a></p>
+			<p align="center" class="music">发行时间：2014-09-17</p>
+		</li>
+		<li class="connect"><a href="#"><img src="Result_picture/shx_imgimg18.jpg" class="connec"></a>
+			<p align="center" class="music"><a href="#">周杰伦</a></p>
+			<p align="center" class="music"><a href="#">哎哟，不错哦</a></p>
+			<p align="center" class="music">发行时间：2015-01-14</p>
+		</li>
+		<li class="connect"><a href="#"><img src="Result_picture/shx_imgimg19.jpg" class="connec"></a>
+			<p align="center" class="music"><a href="#">周杰伦</a></p>
+			<p align="center" class="music"><a href="#">不能说的秘密</a></p>
+			<p align="center" class="music">发行时间：2011-05-12</p>
+		</li>
+		<li class="connect"><a href="#"><img src="Result_picture/shx_imgimg20.jpg" class="connec"></a>
+			<p align="center" class="music"><a href="#">周杰伦</a></p>
+			<p align="center" class="music"><a href="#">魔杰座</a></p>
+			<p align="center" class="music">发行时间：2015-11-02</p>
+		</li>
+
+	
+	
+	</ul>
+</div>
+<br>
+<br>
+<br>
+
+<div style="text-align:center;margin:50px 0; font:normal 14px/24px 'MicroSoft YaHei';color:#000000">
+    <p>青春一晌，愿把浮名，换了代码轻狂</p>
+    <p>from: 喵喵喵小分队</p>
+</div>
+</body>
+</html>

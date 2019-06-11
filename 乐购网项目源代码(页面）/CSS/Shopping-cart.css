@@ -1,0 +1,355 @@
+*{
+    margin: 0;
+    padding:0;
+}
+body{
+    min-width: 1200px;
+    background-image: url(picture/bg.jpg);
+    background-attachment: fixed;
+}
+.logo{
+    position: absolute;
+    top: 12px;
+    left: 0;
+}
+.menu_list{
+    position: absolute;
+    top: -5px;
+    left: 185px;
+}
+.menu_list2{
+    position: absolute;
+    top: -5px;
+    right:0px;
+}
+.listItem{
+    float: left;
+}
+.item{
+    top: 0px;
+    font-size: 18px;
+    float: left;
+    padding:0 32px;
+    text-decoration: none;
+    color: #000000;
+    line-height: 90px;
+}
+#head{
+    /*background-color: #666;*/
+}
+.top_bar{
+    background-color: #fff;
+    position: relative;
+    opacity: 0.618;
+}
+.bar_inner{
+    padding-top: 80px;
+    position: relative;
+    margin:0 auto;
+    max-width: 1200px;
+}
+ul,li{
+    list-style: none;
+}
+
+.search{
+    position: absolute;
+    top: 20px;
+    right: 250px;
+}
+.mod_search_in{
+    border: solid 1px #c9c9c9;
+    padding: 0 33px 0 11px;
+    height: 35px;
+    line-height: 35px;
+}
+.search_in{
+    height: 33px;
+    width: 150px;
+    line-height: 33px;
+    border: none;
+    font-size: 16px;
+    text-align: left;
+}
+input {
+    outline: medium;
+}
+.search_in_bt {
+    position: absolute;
+    top: 2px;
+    right: 1px;
+    border: 0 none;
+    width: 33px;
+    height: 34px;
+    overflow: hidden;
+    background-image: url(picture/searchIcon.jpg);
+    background-size: 33px 34px;
+    background-repeat: no-repeat;
+}
+
+button {
+    cursor: pointer;
+}
+#mainContent,#contentBody{
+    clear:both;
+    width:1200px;
+    min-height: 400px;
+    margin:0 auto;
+
+}
+#contentBody{
+    min-height: 210px;
+
+ }
+#header{
+    padding: 25px 0 45px;
+    height: 60px;
+    position: relative;
+    border-bottom: 1px solid #703910;
+}
+#logo,.block-left{
+    float:left;
+}
+#logo a{
+    text-decoration: none;
+    color: #244b46;
+}
+#logo img{
+    width: 150px;
+    height: 80px;
+}
+#shopSearch{
+    float: right;
+    padding: 0;
+    position: relative;
+    top: 40px;
+}
+#searchOption{
+    position: relative;
+    float: left;
+}
+#searchOp{
+    width: 75px;
+    height: 40px;
+    position: absolute;
+    z-index: 2;
+    top: 2px;
+    left: 2px;
+    border-left: 1px solid #dee0e0;
+    border-right: 1px solid #bfc1c1 ;
+
+}
+#option{
+    width: 75px;
+    text-indent: .4em;
+    line-height: 40px;
+    height: 40px;
+    color: #3a3939;
+    outline: medium;
+    border:none;
+    font-size: 18px;
+
+}
+#searchBorder{
+    width: 550px;
+    height: 40px;
+    line-height: 40px;
+    border: 2px solid #f95645;
+
+}
+#searchButton{
+    position: relative;
+    z-index: 1;
+    float: right;
+}
+#search-btn{
+    width: 80px;
+    height: 40px;
+    border: none;
+    color: #f7f7f7;
+    font-weight: bold;
+    font-size: 25px;
+    background: #f95645;
+
+}
+#searchBlank{
+    width:390px;
+    height: 40px;
+    position: relative;
+    left: 80px;
+}
+#inputSearch{
+    background: none;
+    opacity: 0.618;
+    outline: none;
+    padding-left: 3px;
+    width:380px;
+    height: 30px;
+    line-height:30px;
+    border: none;
+    font-size: 18px;
+}
+#contentMenu,.block-right{
+    float: right;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.cm-list{
+    margin-right:100px;
+}
+.block-right .cm-list{
+    /*float: left;*/
+    margin-left: 3px;
+}
+
+.block-right .single-price{
+    font-weight: bolder;
+
+}
+.block-right .discount,.block-right .sum-price{
+    font-weight: bolder;
+    color:#fa0438 ;
+}
+.playBlock{
+    position: relative;
+    width: 1198px;
+    height: 130px;
+    border: 1px solid #cacbcc;
+    margin: 20px auto;
+}
+.playBlock span{
+    display: inline-block;
+    position: relative;
+    top: -35px;
+    right: 83px;
+    width: 48px;
+    text-align: center;
+    margin-left: 85px;
+}
+.play{
+    margin-left: 20px;
+    width: 30px;
+    height: 120px;
+    text-align: center;
+    line-height: 120px;
+}
+.play-img{
+    margin: 10px;
+    width: 100px;
+    height: 100px;
+}
+.song-singer{
+    position: absolute;
+    top: 10px;
+    left: 190px;
+    display: inline-block;
+    width: 150px;
+    min-height: 30px;
+    text-align: left;
+    font-size: 18px;
+}
+.song,.singer{
+    display: block;
+    width: 100px;
+    color: #cb6408;
+    text-decoration: none;
+}
+.list-column{
+    cursor: pointer;
+}
+#payBar{
+    clear:both;
+    position: relative;
+    bottom:0;
+    width: 1200px;
+    z-index: 9999;
+}
+#float-payBar{
+    height: 50px;
+    background: #faf5ee;
+
+}
+#selectAll{
+    float:left;
+    width: 100px;
+    height: 50px;
+    line-height: 50px;
+    padding-left: 5px;
+}
+#selectAll-checkbox{
+    display: inline-block;
+    position: relative;
+    top: 5px;
+    left: 10px;
+    width: 20px;
+    height: 20px;
+}
+#selectAll-checkbox label{
+    position: relative;
+    float: left;
+    width: 100px;
+    bottom: 16px;
+    background-position: 0 0;
+    cursor: pointer;
+    z-index: 1;
+    text-align: center;
+
+}
+#bar-operations{
+    float: left;
+    height: 50px;
+    line-height: 50px;
+}
+#bar-operations a{
+    text-decoration: none;
+    color: #333333;
+    margin-left: 30px;
+    float: left;
+}
+#bar-right{
+    position: absolute;
+    top: 0;
+    right: 0;
+    float: right;
+    padding-left: 25px;
+}
+#sum{
+
+    float: left;
+}
+.text-font{
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+}
+.text-number{
+    line-height: 50px;
+    padding: 0 3px;
+    font-weight: bold;
+    font-size: 25px;
+    color: #f91339;
+}
+.pay{
+    float: right;
+    display: inline-block;
+    background: #5a382f;
+    width: 100px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    cursor: pointer;
+}
+.pay a{
+    color: #f7f7f7;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 20px;
+}
+.pay a:hover,.song-singer:hover,.list-column:hover,#bar-operations a:hover{
+    text-decoration: underline;
+}
+.foot{
+    background: no-repeat #5f6061;
+    opacity: 0.618;
+}

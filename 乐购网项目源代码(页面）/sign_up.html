@@ -1,0 +1,140 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>乐购|用户注册</title>
+<style>
+    @import url(CSS/login.css);
+	@import url(CSS/login_main.css);
+</style>
+    <link rel="shortcut icon" href="icon.ico" >
+    <script src="JS/EnterSearch.js"></script>
+<script type="text/javascript">
+	function onclick_submit(){
+		var username=document.getElementById("username").value;
+		var password=document.getElementById("password").value;
+		var phone_number=document.getElementById("phone_number").value; 
+		var email=document.getElementById("email").value;
+		var gender;
+
+		var username1=/^[a-zA-Z0-9_]{6,18}$/;
+		var password1=/^[a-zA-Z0-9_]{6,18}$/; 
+		var phone_number1=/^1\d{10}$/;
+		var email1=/^\w+@\w+(\.[a-zA-Z]{2,3}){1,2}$/;
+
+		if(!username1.test(username))
+		{
+			alert("用户名输入有误，只能是字母数字下划线，6-18位");
+		}
+		else if(!password1.test(password))
+		{
+			alert("密码输入有误，只能是字母数字下划线，6-18位");
+		}
+		else if(!email1.test(email))
+		{
+			alert("邮箱输入有误")
+		}
+		else if(!phone_number1.test(phone))
+		{
+			alert("手机号输入有误");
+		}           
+		else if(!checkGender())
+		{
+			alert("请选择性别");
+		}   
+	}
+	function checkGender()
+	{
+		var man = document.getElementById("man");
+		var women = document.getElementById("woman")
+		if(man.checked || woman.checked)
+		{
+			return true;
+		}else
+		{
+			return false;
+		}
+	}
+</script>
+</head>
+
+<body>
+<div class="top_bar">
+    <div class="bar_inner">
+        <h1 class="logo"><a href="index.html"><img src="CSS/picture/logo.png" alt="logo" style="width: 200px;height: 60px;"></a></h1>
+        <ul class="menu_list">
+            <li class="listItem"><a href="index.html" class="item">首页</a></li>
+            <li class="listItem"><a href="singer.html" class="item">歌手</a></li>
+            <li class="listItem"><a href="ranklist.html" class="item">排行榜</a></li>
+            <li class="listItem"><a href="store.html" class="item">商城</a></li>
+            <li class="listItem"><a href="cart.html" class="item">购物车</a></li>
+        </ul>
+        <div class="search">
+            <div class="mod_search_in">
+                <input class="search_in" aria-label="请输入搜索内容" type="text" placeholder="请输入搜索内容" accesskey="s" onkeydown="huichesearch()">
+                <button type="submit" class="search_in_bt"></button>
+            </div>
+        </div>
+        <ul class="menu_list2">
+            <li class="listItem2"><a href="sign_in.html" class="item">登录</a></li>
+            <li class="listItem2"><a href="sign_up.html" class="item">注册</a></li>
+        </ul>
+    </div>
+</div>
+<br>
+<h1 align="center">用户注册</h1>
+<br>
+<br>
+<br>
+<br>
+<br><p align="center" style="font-size:20px">音乐，人类的灵魂</p>
+<p align="center">懂得音乐</p>
+<p align="center">懂得生活</p>
+<br>
+<br>
+<br>
+<div align="center">
+<table align="center" width="400px" height="280px" style="font-family:微软雅黑;font-size:20px; ">
+	<tr>
+	<td align="left" width="20%" height="30px">用户名：</td><td height="40px"><input type="text" name="username" style="width:250px; height:30px;" id="username" placeholder="「字母数字下划线，6-18位」"/></td>
+	</tr>
+	<tr>
+	<td align="left" width="20%" height="30px">密&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;码：</td><td><input type="password" name="password" style="width:250px; height:30px;" id="password"  placeholder="「字母数字下划线，6-18位」" /></td>
+	</tr>
+	<tr>
+    <td align="left" width="20%" height="30px">手机号：</td><td><input type="text" name="number" id="phone_number" style="width:250px; height:30px;" /></td>
+    </tr>
+    <tr>
+    <td align="left" width="20%" height="30px">邮&nbsp;&nbsp;&nbsp;&nbsp;箱：</td><td><input type="text" name="email" id="email" style="width:250px; height:30px;" /></td>
+    </tr>
+    <tr>
+    <td align="left" width="20%" height="30px">性&nbsp;&nbsp;&nbsp;&thinsp;别：</td><td>&nbsp;&nbsp;&nbsp;&thinsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="sex"  class="sex" id="man"/>男&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="sex" class="sex" id="woman" />女</td>
+    </tr>   
+  </table>
+  </div>
+  <br/>
+  <h3 align="center"><input type="submit" class="submit" onclick="onclick_submit()" value="立即注册"  style="background-color:#E8F9FC;  width:250px; height:40px; border:2px solid #a1a1a1;border-radius:10px; color:dodgerblue;" /></h3><br/>
+<p align="center">点击「注册」按钮，即代表您同意<a href="agreement.html">《乐购用户协议》</a></p>
+  <br/>
+ 
+  <h3 align="center"><input id="submit" type="button" class="submit2" value="下载乐购APP" style="background-color:#E8F9FC; width:250px; height:40px; border:2px solid #a1a1a1;border-radius:10px; color:dodgerblue; FILTER:alpha(opacity=0);" /></h3>
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+<br>
+  <hr>
+  <p><a href="#">关于喵喵喵</a>&nbsp;&thinsp;<a href="#">关于我们</a>&nbsp;&thinsp;<a href="#">联系客服</a>&nbsp;&thinsp;<a href="#">法律声明</a>&nbsp;&thinsp;<a href="#">温馨提醒</a>&nbsp;&thinsp;<a href="#">监督举报</a>&nbsp;&thinsp;<a href="#">English Site</a></p><hr>
+  <p style="color:dodgerblue">音乐，带给你心灵的慰藉，爱上音乐，爱上喵喵喵</p>
+  <div style="text-align:center;margin:30px 0px; font:normal 14px/24px 'MicroSoft YaHei';color:#">
+    <p>青春一晌，愿把浮名，换了代码轻狂</p>
+    <p>from: 喵喵喵小分队</p>
+</div>
+
+</body>
+</html>

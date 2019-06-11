@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TopList</title>
+    <link rel="stylesheet" href="CSS/Top.css">
+	<script src="JS/EnterSearch.js"></script>
+	<link rel="shortcut icon" href="icon.ico" >
+</head>
+<body>
+<div id="head">
+    <div class="top_bar">
+        <div class="bar_inner">
+            <h1 class="logo"><a href="index.html"><img src="CSS/picture/logo.png" alt="logo"
+                                                       style="width: 200px;height: 60px;"></a></h1>
+            <ul class="menu_list">
+                <li class="listItem"><a href="index.html" class="menu-item">首页</a></li>
+                <li class="listItem"><a href="singer.html" class="menu-item">歌手</a></li>
+                <li class="listItem"><a href="ranklist.html" class="menu-item">排行榜</a></li>
+                <li class="listItem"><a href="store.html" class="menu-item">商城</a></li>
+				<li class="listItem"><a href="cart.html" class="menu-item">购物车</a></li>
+            </ul>
+            <div class="search">
+                <div class="mod_search_in">
+                    <input class="search_in" aria-label="请输入搜索内容" type="text" placeholder="请输入搜索内容" accesskey="s" onkeydown="huichesearch()">
+                    <button type="submit" class="search_in_bt"></button>
+                </div>
+            </div>
+			<ul class="menu_list2">
+				<li class="listItem"><a href="sign_in.html" class="menu-item">登录</a></li>
+				<li class="listItem"><a href="sign_up.html" class="menu-item">注册</a></li>
+			</ul>
+        </div>
+    </div>
+</div>
+<div style="max-width: 1300px; margin: 0 auto;">
+	<br>
+    <div class="title_font">TOP</div>
+    <ul>
+        <li>
+            <div class="new_top">
+                <div class="toplist_name">新歌</div>
+                <div class="top_player">|
+                    <i class="top_iconplayer"></i>
+                </div>
+                <ul class="toplist">
+                    <li class="toplist_item">
+                        <div class="item" style="margin-top: 10px;">
+                            <div class="itemnumber">1)</div>
+                            <div class="song">躲猫猫</div>
+                            <div class="singer">TFBOYS</div>
+                        </div>
+                        <div>
+                            <div class="item">
+                                <div class="itemnumber">2)</div>
+                                <div class="song">绒花</div>
+                                <div class="singer">韩红</div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="item">
+                                <div class="itemnumber">3)</div>
+                                <div class="song">感觉自己是巨星</div>
+                                <div class="singer">毛不易</div>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- 第一列 -->
+                    <li class="toplist_item">
+                        <div class="item" style="margin-top: 10px;">
+                            <div class="itemnumber">4)</div>
+                            <div class="song">MOOD</div>
+                            <div class="singer">王嘉尔&孟佳</div>
+                        </div>
+                        <div>
+                            <div class="item">
+                                <div class="itemnumber">5)</div>
+                                <div class="song">空空如也</div>
+                                <div class="singer">胡66</div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="item">
+                                <div class="itemnumber">6)</div>
+                                <div class="song">说散就散</div>
+                                <div class="singer">艾福杰尼&黄旭&田羽生</div>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- 第二列 -->
+                    <li class="toplist_item">
+                        <div class="item" style="margin-top: 10px;">
+                            <div class="itemnumber">7)</div>
+                            <div class="song">Belong</div>
+                            <div class="singer">Cash Cash</div>
+                        </div>
+                        <div>
+                            <div class="item">
+                                <div class="itemnumber">8)</div>
+                                <div class="song">赴一场生命的冒险</div>
+                                <div class="singer">迪丽热巴</div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="item">
+                                <div class="itemnumber">9)</div>
+                                <div class="song">说散就散</div>
+                                <div class="singer">袁娅维</div>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- 第三列 -->
+                    <li class="toplist_item">
+                        <div class="item" style="margin-top: 10px;">
+                            <div class="itemnumber">10)</div>
+                            <div class="song">我们的时光</div>
+                            <div class="singer">TFBOYS</div>
+                        </div>
+                        <div>
+                            <div class="item">
+                                <div class="itemnumber">11)</div>
+                                <div class="song">繁尘</div>
+                                <div class="singer">沙宝亮</div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="item">
+                                <div class="itemnumber">12)</div>
+                                <div class="song">柒个我</div>
+                                <div class="singer">陈小希</div>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- 第四列 -->
+                </ul>
+            </div>
+        </li>
+    </ul>
+    <!-- 新歌 -->
+    <ul>
+        <li>
+            <div class="new_top2">
+                <div class="toplist_name2">热歌</div>
+                <div class="top_player2">|
+                    <i class="top_iconplayer2"></i></div>
+                <ul class="toplist2">
+                    <li class="toplist_item2">
+                        <div class="item" style="margin-top: 10px">
+                            <div class="itemnumber2">1)</div>
+                            <div class="song2">红昭愿</div>
+                            <div class="singer2">音阙诗听</div>
+                        </div>
+                        <div>
+                            <div class="item">
+                                <div class="itemnumber2">2)</div>
+                                <div class="song2">远走高飞</div>
+                                <div class="singer2">金志文</div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="item2">
+                                <div class="itemnumber2">3)</div>
+                                <div class="song2">背过手</div>
+                                <div class="singer2">薛之谦</div>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- 第一列 -->
+                    <li class="toplist_item2" style="right:200px;">
+                        <div class="item" style="margin-top: 10px;">
+                            <div class="itemnumber2">4)</div>
+                            <div class="song2">8000！</div>
+                            <div class="singer2">PRC巴音汗</div>
+                        </div>
+                        <div>
+                            <div class="item">
+                                <div class="itemnumber2">5)</div>
+                                <div class="song2">Faded</div>
+                                <div class="singer">Alan Walker</div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="item">
+                                <div class="itemnumber2">6)</div>
+                                <div class="song2">女儿国</div>
+                                <div class="singer2">张靓颖&李荣浩</div>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- 第二列 -->
+                    <li class="toplist_item2" style="right:430px;">
+                        <div class="item" style="margin-top: 10px;">
+                            <div class="itemnumber2">7)</div>
+                            <div class="song2">文爱</div>
+                            <div class="singer2">CG文爱</div>
+                        </div>
+                        <div>
+                            <div class="item">
+                                <div class="itemnumber2">8)</div>
+                                <div class="song2">凉凉</div>
+                                <div class="singer2">杨宗纬&张碧晨</div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="item">
+                                <div class="itemnumber2">9)</div>
+                                <div class="song2">追光者</div>
+                                <div class="singer2">岑宁儿</div>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- 第三列 -->
+                    <li class="toplist_item2" style="right:660px;">
+                        <div class="item" style="margin-top: 10px;">
+                            <div class="itemnumber2">10)</div>
+                            <div class="song2">带你去旅行</div>
+                            <div class="singer2">校长</div>
+                        </div>
+                        <div>
+                            <div class="item">
+                                <div class="itemnumber2">11)</div>
+                                <div class="song2">Unpredictable</div>
+                                <div class="singer2">易烊千玺</div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="item">
+                                <div class="itemnumber2">12)</div>
+                                <div class="song2">告白气球</div>
+                                <div class="singer2">周杰伦</div>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- 第四列 -->
+                </ul>
+            </div>
+        </li>
+    </ul>
+    <!-- 热歌 -->
+    <ul>
+        <li>
+            <div class="new_top3">
+                <div class="toplist_name">华语</div>
+                <div class="top_player">|
+                    <i class="top_iconplayer"></i></div>
+                <ul class="toplist">
+                    <li class="toplist_item">
+                        <div class="item" style="margin-top: 10px;">
+                            <div class="itemnumber">1)</div>
+                            <div class="song">伟大的渺小</div>
+                            <div class="singer">林俊杰</div>
+                        </div>
+                        <div>
+                            <div class="item">
+                                <div class="itemnumber">2)</div>
+                                <div class="song">重生</div>
+                                <div class="singer">容祖儿</div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="item">
+                                <div class="itemnumber">3)</div>
+                                <div class="song">缘分一道桥</div>
+                                <div class="singer">王力宏/谭维维</div>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- 第一列 -->
+                    <li class="toplist_item">
+                        <div class="item" style="margin-top: 10px;">
+                            <div class="itemnumber">4)</div>
+                            <div class="song">夜来妖</div>
+                            <div class="singer">陈冠希</div>
+                        </div>
+                        <div>
+                            <div class="item">
+                                <div class="itemnumber">5)</div>
+                                <div class="song">言不由衷</div>
+                                <div class="singer">徐佳莹</div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="item">
+                                <div class="itemnumber">6)</div>
+                                <div class="song">我多喜欢你，你会知道</div>
+                                <div class="singer">王俊琪</div>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- 第二列 -->
+                    <li class="toplist_item">
+                        <div class="item" style="margin-top: 10px;">
+                            <div class="itemnumber">7)</div>
+                            <div class="song">初心</div>
+                            <div class="singer">古巨基</div>
+                        </div>
+                        <div>
+                            <div class="item">
+                                <div class="itemnumber">8)</div>
+                                <div class="song">I Promise</div>
+                                <div class="singer">钟嘉欣</div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="item">
+                                <div class="itemnumber">9)</div>
+                                <div class="song">Victoria</div>
+                                <div class="singer">邓紫棋</div>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- 第三列 -->
+                    <li class="toplist_item">
+                        <div class="item" style="margin-top: 10px;">
+                            <div class="itemnumber">10)</div>
+                            <div class="song">暧昧</div>
+                            <div class="singer">杨丞琳</div>
+                        </div>
+                        <div>
+                            <div class="item">
+                                <div class="itemnumber">11)</div>
+                                <div class="song">温柔的奇迹</div>
+                                <div class="singer">范玮琪</div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="item">
+                                <div class="itemnumber">12)</div>
+                                <div class="song">一生所爱</div>
+                                <div class="singer">莫文蔚</div>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- 第四列 -->
+                </ul>
+            </div>
+        </li>
+    </ul>
+    <!-- 华语 -->
+    <ul>
+        <li>
+            <div class="new_top4">
+                <div class="toplist_name2">欧美</div>
+                <div class="top_player2">|
+                    <i class="top_iconplayer2"></i></div>
+                <ul class="toplist2">
+                    <li class="toplist_item2" style="margin: 0 17px;">
+                        <div class="item" style="margin-top: 10px;">
+                            <div class="itemnumber2">1)</div>
+                            <div class="song2">Reputation</div>
+                            <div class="singer2">Taylor Swift</div>
+                        </div>
+                        <div>
+                            <div class="item">
+                                <div class="itemnumber2">2)</div>
+                                <div class="song2">So Far Away</div>
+                                <div class="singer2">Martin Garrix</div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="item2">
+                                <div class="itemnumber2">3)</div>
+                                <div class="song2">Never Be the Same</div>
+                                <div class="singer2">Camila Cabello</div>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- 第一列 -->
+                    <li class="toplist_item2" style="margin: 0 17px;right:220px;">
+                        <div class="item" style="margin-top: 10px;">
+                            <div class="itemnumber2">4)</div>
+                            <div class="song2">O Holy Night</div>
+                            <div class="singer2">Ellie Goulding</div>
+                        </div>
+                        <div>
+                            <div class="item">
+                                <div class="itemnumber2">5)</div>
+                                <div class="song2">The Spectre</div>
+                                <div class="singer">Alan Walker</div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="item">
+                                <div class="itemnumber2">6)</div>
+                                <div class="song2">Christmas Eve</div>
+                                <div class="singer2">Kelly Clarkson</div>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- 第二列 -->
+                    <li class="toplist_item2" style="margin: 0 17px;right:430px;">
+                        <div class="item" style="margin-top: 10px;">
+                            <div class="itemnumber2">7)</div>
+                            <div class="song2">Born To Race</div>
+                            <div class="singer2">OneRepublic</div>
+                        </div>
+                        <div>
+                            <div class="item">
+                                <div class="itemnumber2">8)</div>
+                                <div class="song2">Wolves</div>
+                                <div class="singer2">Selena Gomez</div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="item">
+                                <div class="itemnumber2">9)</div>
+                                <div class="song2">Windsor Gardens</div>
+                                <div class="singer2">Dario Marianelli</div>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- 第三列 -->
+                    <li class="toplist_item2" style="margin: 0 17px;right:660px;">
+                        <div class="item" style="margin-top: 10px;">
+                            <div class="itemnumber2">10)</div>
+                            <div class="song2">Hola</div>
+                            <div class="singer2">Flo Rida</div>
+                        </div>
+                        <div>
+                            <div class="item">
+                                <div class="itemnumber2">11)</div>
+                                <div class="song2">Low</div>
+                                <div class="singer2">Greyson Chance</div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="item">
+                                <div class="itemnumber2">12)</div>
+                                <div class="song2">Locas</div>
+                                <div class="singer2">Pitbull</div>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- 欧美 -->
+                </ul>
+            </div>
+        </li>
+    </ul>
+    <!-- 欧美 -->
+    <ul>
+        <li >
+            <div class="new_top5">
+                <div class="toplist_name">日韩</div>
+                <div class="top_player">|
+                    <i class="top_iconplayer"></i></div>
+                <ul class="toplist">
+                    <li class="toplist_item">
+                        <div class="item" style="margin-top: 10px;">
+                            <div class="itemnumber">1)</div>
+                            <div class="song">あなた (你)</div>
+                            <div class="singer">宇多田ヒカル</div>
+                        </div>
+                        <div>
+                            <div class="item">
+                                <div class="itemnumber">2)</div>
+                                <div class="song">Shining Star</div>
+                                <div class="singer">初音ミク</div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="item">
+                                <div class="itemnumber">3)</div>
+                                <div class="song">人生は夢だらけ</div>
+                                <div class="singer">椎名林檎</div>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- 第一列 -->
+                    <li class="toplist_item">
+                        <div class="item" style="margin-top: 10px;">
+                            <div class="itemnumber">4)</div>
+                            <div class="song">Lip & Hip</div>
+                            <div class="singer">현아 (泫雅)</div>
+                        </div>
+                        <div>
+                            <div class="item">
+                                <div class="itemnumber">5)</div>
+                                <div class="song">오늘 헤어져</div>
+                                <div class="singer">Rain/조현아</div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="item">
+                                <div class="itemnumber">6)</div>
+                                <div class="song">JUST DANCE</div>
+                                <div class="singer">MIXNINE</div>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- 第二列 -->
+                    <li class="toplist_item">
+                        <div class="item" style="margin-top: 10px;">
+                            <div class="itemnumber">7)</div>
+                            <div class="song">Fill Me Up</div>
+                            <div class="singer">赤西仁</div>
+                        </div>
+                        <div>
+                            <div class="item">
+                                <div class="itemnumber">8)</div>
+                                <div class="song">そばにいて</div>
+                                <div class="singer">倖田來未</div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="item">
+                                <div class="itemnumber">9)</div>
+                                <div class="song">가을 아침</div>
+                                <div class="singer">아이유 (IU)</div>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- 第三列 -->
+                    <li class="toplist_item">
+                        <div class="item" style="margin-top: 10px;">
+                            <div class="itemnumber">10)</div>
+                            <div class="song">LOVE STORY </div>
+                            <div class="singer">에픽하이/IU</div>
+                        </div>
+                        <div>
+                            <div class="item">
+                                <div class="itemnumber">11)</div>
+                                <div class="song">You Are</div>
+                                <div class="singer">GOT7</div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="item">
+                                <div class="itemnumber">12)</div>
+                                <div class="song">Crystal Snow</div>
+                                <div class="singer">BTS (防弹少年团)</div>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- 第四列 -->
+                </ul>
+            </div>
+        </li>
+    </ul>
+    <!-- 日韩 -->
+</div>
+<div class="foot">
+    <div style="text-align:center;height: 100px; font:normal 14px/24px 'MicroSoft YaHei';padding-top:50px;color: #282828;">
+        <br>
+        <p>青春一晌，愿把浮名，换了代码轻狂</p>
+        <p>from: 喵喵喵小分队</p>
+    </div>
+</div>
+</body>
+</html>
